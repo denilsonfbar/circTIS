@@ -1,0 +1,5 @@
+name: circtisenv
+channels:
+  - conda-forge
+dependencies:
+  - shogun=6.1.3
