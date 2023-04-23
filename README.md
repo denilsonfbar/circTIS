@@ -2,7 +2,9 @@ circTIS
 =======
 **circTIS** is a computational tool designed to translation initiation sites (TIS) prediction in circRNAs.
 
-## Installation
+Repository of circTIS development: [https://github.com/denilsonfbar/circTIS-exps-BSB2023](https://github.com/denilsonfbar/circTIS-exps-BSB2023)
+
+## Fast installation
 
 Clone the circTIS repository:
 ```
@@ -58,10 +60,10 @@ circtis.py -f path/to/example/circRNA_seqs.fa
 
 ### Expected example output
 ```
-2023-04-14 16:53:56 -> started circTIS v1.0
-2023-04-14 16:54:07 -> prediction finished
+2023-04-23 13:10:46 -> started circTIS v1.0
+2023-04-23 13:10:58 -> prediction finished
 Number of input sequences -> 100
-Number of predicted TIS   -> 189
+Number of predicted TIS   -> 100
 All possible TIS file     -> example/circTIS_output/all_possible_TIS.tsv
 Predicted TIS file        -> example/circTIS_output/predicted_TIS.tsv
 ```
@@ -74,7 +76,7 @@ The files with the outputs of circTIS execution are recorded at the addresses gi
 Install the following requirements:
 
 - [Python3](https://www.python.org/)
-- [Pandas](https://pandas.pydata.org/docs/getting_started/install.html) 
+- [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
 - [Biopython](https://biopython.org/wiki/Download)
 - [Shogun 6.1.3](https://anaconda.org/conda-forge/shogun)
 
@@ -113,7 +115,7 @@ python3 circTIS.py -f example/circRNA_seqs.fa
 
 If you use or discuss circTIS, please cite:
 
-(not published yet)
+Submitted for 16th Brazilian Symposium on Bioinformatics - BSB 2023 (under peer review)
 
 
 ## License
