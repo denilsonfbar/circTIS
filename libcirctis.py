@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 from time import time
@@ -5,7 +6,13 @@ from Bio import SeqIO
 import pickle
 import shogun as sg
 
-model_file = 'model_w203.pkl'
+
+# Best sample length found in experiments
+downstream_size = 240
+upstream_size = 36
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_file = os.path.join(script_dir,'circTIS_model_v1.pkl')
 
 
 # Extract a subsequence around a TIS from circRNA, according length windows. 
@@ -53,7 +60,7 @@ def extract_samples(fasta_file_path, tis_types):
                 if test_codon in tis_types:
 
                     df_samples.loc[df_samples.shape[0]] = [circrna_id, test_codon, position_zi+1]  # index correction
-                    sample = extract_circrna_subseq_around_position(circrna_seq, 100, 103, position_zi)
+                    sample = extract_circrna_subseq_around_position(circrna_seq, upstream_size, downstream_size, position_zi)
                     samples.append(sample)
 
     return df_samples, samples, n_seqs
