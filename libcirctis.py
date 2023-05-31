@@ -7,9 +7,9 @@ import pickle
 import shogun as sg
 
 
-# Best sample length found in experiments
-downstream_size = 240
-upstream_size = 36
+# Sample length
+upstream_size = 40
+downstream_size = 287
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 model_file = os.path.join(script_dir,'circTIS_model_v1.pkl')

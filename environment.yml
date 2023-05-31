@@ -1,4 +1,4 @@
-name: circtisenv
+name: circtis_env
 channels:
   - conda-forge
 dependencies:

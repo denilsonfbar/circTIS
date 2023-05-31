@@ -23,7 +23,7 @@ conda env create -f environment.yml
 
 Activate the created environment:
 ```
-conda activate circtisenv
+conda activate circtis_env
 ```
 
 
