@@ -60,10 +60,10 @@ circtis.py -f path/to/example/circRNA_seqs.fa
 
 ### Expected example output
 ```
-2023-04-23 13:10:46 -> started circTIS v1.0
-2023-04-23 13:10:58 -> prediction finished
+2023-05-31 15:48:48 -> started circTIS v1.0
+2023-05-31 15:49:01 -> prediction finished
 Number of input sequences -> 100
-Number of predicted TIS   -> 100
+Number of predicted TIS   -> 92
 All possible TIS file     -> example/circTIS_output/all_possible_TIS.tsv
 Predicted TIS file        -> example/circTIS_output/predicted_TIS.tsv
 ```
