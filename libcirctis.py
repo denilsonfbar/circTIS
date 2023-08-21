@@ -39,7 +39,7 @@ def extract_circrna_subseq_around_position(circrna_seq, length_window_left, leng
 
 def extract_samples(fasta_file_path, tis_types):
 
-    df_samples = pd.DataFrame(columns=['circRNA_id', 'TIS_type', 'position'])
+    ls_samples = []
     samples = []
     n_seqs = 0
 
@@ -59,9 +59,11 @@ def extract_samples(fasta_file_path, tis_types):
 
                 if test_codon in tis_types:
 
-                    df_samples.loc[df_samples.shape[0]] = [circrna_id, test_codon, position_zi+1]  # index correction
+                    ls_samples.append([circrna_id, test_codon, position_zi+1])  # index correction
                     sample = extract_circrna_subseq_around_position(circrna_seq, upstream_size, downstream_size, position_zi)
                     samples.append(sample)
+
+    df_samples = pd.DataFrame(ls_samples, columns=['circRNA_id', 'TIS_type', 'position'])
 
     return df_samples, samples, n_seqs
 
