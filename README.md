@@ -4,7 +4,7 @@ circTIS
 
 Repository of circTIS development: [https://github.com/denilsonfbar/circTIS-exps-BSB2023](https://github.com/denilsonfbar/circTIS-exps-BSB2023)
 
-## Fast installation
+## Quick installation
 
 Clone the circTIS repository:
 ```
